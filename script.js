@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Translations object
  const translations = {
     ka: {
-        'page-title': 'ავეჯის და ტვირთის გადაზიდვა | Gadazidvebi.GE',
+        'page-title': 'ავეჯის და ტვირთის გადაზიდვა | Gadazidva24.GE',
         'nav-home': 'მთავარი',
         'nav-about': 'ჩვენს შესახებ',
         'nav-services': 'სერვისები',
@@ -190,8 +190,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'cta-button': 'დაგვიკავშირდით',
         'experience-title': 'ჩვენი გამოცდილება თქვენს სამსახურში',
         'experience-subtitle': '27 წლიანი გამოცდილება და მაღალი პროფესიონალიზმი!',
-        'why-us-title': 'რატომ Gadazidvebi.GE?',
-        'company-description': 'ჩვენი კომპანია, Gadazidvebi.GE 1998 წლიდან ემსახურება თბილისსა და საქართველოს მასშტაბით ათასობით კმაყოფილ კლიენტს. წლების განმავლობაში ჩვენმა გამოცდილებამ და სანდოობამ გაგვხადა ერთ-ერთი წამყვანი კომპანია ტვირთების გადაზიდვის სფეროში.',
+        'why-us-title': 'რატომ Gadazidva24.GE?',
+        'company-description': 'ჩვენი კომპანია, Gadazidva24.GE 1998 წლიდან ემსახურება თბილისსა და საქართველოს მასშტაბით ათასობით კმაყოფილ კლიენტს. წლების განმავლობაში ჩვენმა გამოცდილებამ და სანდოობამ გაგვხადა ერთ-ერთი წამყვანი კომპანია ტვირთების გადაზიდვის სფეროში.',
         'fleet-description': 'ჩვენ გვყავს 3 ძირითადი და 2 სარეზერვო თანამედროვე ავტომობილი, რაც საშუალებას გვაძლევს შევასრულოთ ნებისმიერი მოცულობის და სირთულის შეკვეთა. ჩვენი პროფესიონალების გუნდი უზრუნველყოფს ხარისხიან, ორგანიზებულ და კლიენტზე მორგებულ მომსახურებას — ზუსტად შეთანხმებულ დროსა და პირობებში.',
         'service-247': 'მომსახურება 24/7',
         'client-wishes': 'ვითვალისწინებთ ყველა კლიენტის სურვილს',
@@ -227,13 +227,13 @@ document.addEventListener('DOMContentLoaded', function() {
         'contact-email': 'ელ-ფოსტა',
         'contact-facebook': 'Facebook',
         'contact-address': 'მისამართი',
-        'copyright': '© 2025 Gadazidvebi.GE. ყველა უფლება დაცულია.',
+        'copyright': '© 2025 Gadazidva24.GE. ყველა უფლება დაცულია.',
         'hero-location': 'თბილისში და მთელი საქართველოს მასშტაბით.',
         'location-address': 'თბილისი, საქართველო',
         'footer-description': 'პროფესიონალური გადაზიდვები თბილისსა და საქართველოში.'
     },
     en: {
-        'page-title': 'Furniture and Cargo Transportation | Gadazidvebi.GE',
+        'page-title': 'Furniture and Cargo Transportation | Gadazidva24.GE',
         'nav-home': 'Home',
         'nav-about': 'About Us',
         'nav-services': 'Services',
@@ -247,8 +247,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'cta-button': 'Contact Us',
         'experience-title': 'Our Experience at Your Service',
         'experience-subtitle': '27 years of experience and high professionalism!',
-        'why-us-title': 'Why Gadazidvebi.GE?',
-        'company-description': 'Our company, Gadazidvebi.GE, has been serving thousands of satisfied customers in Tbilisi and throughout Georgia since 1998. Over the years, our experience and reliability have made us one of the leading companies in the cargo transportation industry.',
+        'why-us-title': 'Why Gadazidva24.GE?',
+        'company-description': 'Our company, Gadazidva24.GE, has been serving thousands of satisfied customers in Tbilisi and throughout Georgia since 1998. Over the years, our experience and reliability have made us one of the leading companies in the cargo transportation industry.',
         'fleet-description': 'We have 3 main and 2 reserve modern vehicles, which allows us to handle orders of any volume and complexity. Our team of professionals provides quality, organized, and customer-oriented service — exactly at the agreed time and conditions.',
         'service-247': '24/7 Service',
         'client-wishes': 'We Consider Every Client\'s Wishes',
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
         'contact-email': 'Email',
         'contact-facebook': 'Facebook',
         'contact-address': 'Address',
-        'copyright': '© 2025 Gadazidvebi.GE. All rights reserved.',
+        'copyright': '© 2025 Gadazidva24.GE. All rights reserved.',
         'hero-location': 'In Tbilisi and throughout Georgia.',
         'location-address': 'Tbilisi, Georgia',
         'footer-description': 'Professional transportation in Tbilisi and Georgia.'
