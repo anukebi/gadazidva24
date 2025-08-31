@@ -2,21 +2,20 @@
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes to the main branch
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows manual trigger from Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Permissions for GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Concurrency to prevent multiple deployments at once
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -28,23 +27,32 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Checkout the repo
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Step 2: Setup Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      # ← Add the sitemap step here
+      # Step 3: Generate sitemap for your single HTML file
       - name: Generate sitemap
-        uses: cicirello/generate-sitemap@v1
-        with:
-          base-url-path: "https://www.gadazidva24.ge"
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+          echo "  <url>" >> sitemap.xml
+          echo "    <loc>https://www.gadazidva24.ge/index.html</loc>" >> sitemap.xml
+          echo "    <lastmod>$(date +%Y-%m-%d)</lastmod>" >> sitemap.xml
+          echo "  </url>" >> sitemap.xml
+          echo '</urlset>' >> sitemap.xml
 
+      # Step 4: Upload all repo files (including sitemap) to GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
 
+      # Step 5: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
